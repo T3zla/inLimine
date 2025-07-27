@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inLimine</title>
+    <link rel = "stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>inLimine</h1>
+        <p class="subtitle">Legal Document Generator</p>
+
+        <label for="docType">Select Document Type:</label>
+        <select id="docType">
+            <option value="">-- Choose a document--</option>
+            <option value="summons">Summons</option>
+            <option value="affidavit">Affidavit</option>
+            <option value="notice">Notice</option>
+        </select>
+
+        <div id="dynamicFields"></div>
+
+        <label for="aiInput">Additional instructions and details:</label>
+        <textarea id="aiInput" rows="6" placeholder="Describe any details relevant to the case that should be considered for this document"></textarea>
+
+        <button id="generateBtn">Generate Document</button>
+    </main>
+    
+</body>
+</html>
